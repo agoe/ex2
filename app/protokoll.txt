@@ -1,0 +1,14 @@
+#http://ruby.railstutorial.org/ruby-on-rails-tutorial-book#top
+#http://ruby.about.com/od/rubyversionmanager/a/Using-Rvm-Gemsets.htm
+rvm gemset create rails3tutorial2ndEd 
+rvm gemset use railstutorial2nEd
+
+rvm list gemsets
+
+file .gemrc:
+install: --no-rdoc --no-ri
+update: --no-rdoc --no-ri
+
+in /home/laroot "home directory"
+
+gem install rails -v 3.2.3 (nochmal für gemset installieren)
