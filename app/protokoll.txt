@@ -12,3 +12,5 @@ update: --no-rdoc --no-ri
 in /home/laroot "home directory"
 
 gem install rails -v 3.2.3 (nochmal für gemset installieren)
+$ git add .
+$ git status
