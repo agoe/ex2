@@ -17,3 +17,24 @@ $ git status
 
 gem update --system 1.8.24
 gem install heroku
+
+git checkout -b modify-README #mit apatana create branch
+git branch #list of branches
+
+heroku create --stack cedar
+Creating falling-rain-4908... done, stack is cedar
+http://falling-rain-4908.herokuapp.com/ | git@heroku.com:falling-rain-4908.git
+
+#http://railsapps.github.com/rails-heroku-tutorial.html
+von sqllite nach pg umschalten für heroku im Gemfile:
+	group :development, :test do
+	  gem 'sqlite3'
+	end
+	group :production do
+	  gem 'pg'
+	end
+$ bundle install --without production
+Gemfile und Gemfile.lock committen
+#http://railsapps.github.com/rails-git.html
+$ git commit -am "Configured for deployment to Heroku"
+$ git push heroku master
